@@ -9,7 +9,7 @@ from PIL import Image, ImageEnhance
 from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms
 
-from submit.utils import RandomErasing
+from utils import RandomErasing
 
 IMG_EXTENSIONS = [
     '.jpg', '.JPG', '.jpeg', '.JPEG',

@@ -15,6 +15,8 @@ from torchvision import transforms
 from logger import Logger
 from utils import *
 from dataset import SceneDataset
+from models.inception_v4 import InceptionV4
+from models.se_module import se_resnet50
 
 
 logging.basicConfig(level=logging.INFO)
@@ -210,7 +212,7 @@ def main():
     if retrain:
         model_weight = checkpoint_path
     else:
-        model_weight = './pretrained_model/whole_%s_places365.pth.tar' % arch
+        model_weight = './models/pretrained_model/%s_places365.pth.tar' % arch
 
     # Set the logger
     logger = Logger(log_dir)

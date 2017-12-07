@@ -1,11 +1,11 @@
 # coding=utf-8
 from __future__ import absolute_import
 from torchvision.transforms import *
-import numpy as np
 import torch
 import torch.optim as optim
 import pickle
-import os
+from models.se_module import se_resnet50
+from models.inception_v4 import InceptionV4
 
 
 class AverageMeter(object):

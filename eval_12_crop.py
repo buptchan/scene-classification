@@ -17,7 +17,7 @@ from torchvision import transforms
 from PIL import Image
 import pandas as pd
 from tqdm import tqdm
-from submit.utils import *
+from utils import *
 
 batch_size = 64
 dataset_size = 7120
